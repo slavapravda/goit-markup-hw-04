@@ -177,10 +177,18 @@ body {
 /* hero */
 
 .hero {
+  
+  margin: auto;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background: var(--footer-color);
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 1600px;
+  background-color: var(--footer-color);
 }
 
 .hero-title {
