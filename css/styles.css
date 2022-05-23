@@ -96,7 +96,7 @@ body {
 
 /* header */
 .header {
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-conteiner {
@@ -170,6 +170,7 @@ body {
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
@@ -188,9 +189,16 @@ body {
 }
 
 .contact-link:hover .svg-tel,
-.contact-link:hover .svg-mail{
+.contact-link:focus .svg-tel,
+.contact-link:hover .svg-mail,
+.contact-link:focus .svg-mail{
   fill: var(--accent-color);
 }
+/* .contact-link:hover .svg-mail,
+.contact-link:focus .svg-mail{
+  fill: var(--accent-color);
+} */
+
 /* hero */
 
 .hero {
@@ -236,6 +244,7 @@ body {
   text-align: center;
   line-height: 1.88;
   letter-spacing: 0.06em;
+
   cursor: pointer;
   border: none;
 
@@ -292,8 +301,6 @@ body {
   margin-right: 30px;
 }
 
-
-
 /* team*/
 
 .team {
@@ -315,13 +322,16 @@ body {
   margin-right: 0;
 }
 .team-decsription {
-  text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+
+  text-align: center;
+  
 }
 
 .team-name {
   margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -344,7 +354,8 @@ body {
   align-items: center;
   width: 44px;
   height: 44px;
-  background-color: #ffffff;
+
+  background-color: var(--white-color);
   border-radius: 50%;
 }
 .social-item:not(:last-child){
@@ -359,8 +370,9 @@ body {
   background-color: #2196F3;;
 }
 
-.social-link:hover .social-icon{
-  fill: #FFFFFF;;
+.social-link:hover .social-icon,
+.social-link:focus .social-icon{
+  fill: var(--white-color);
 }
 /* clients */
 .clients-list{
@@ -372,7 +384,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 16px 32px; */
 
   width: 170px;
   height: 92px;
@@ -384,20 +395,19 @@ body {
 .clients-item:not(:last-child){
   margin-right: 30px;
 }
-
+/* clients-svg */
 .clients-icon{
   fill: #AFB1B8;
 }
 .clients-link:hover,
 .clients-link:focus{
-  background-color: #ffffff;
-  border-color: #2196F3;
-  cursor: pointer;
+  background-color: var(--white-color);
+  border-color: var(--accent-color);
 }
 
 .clients-link:hover .clients-icon,
 .clients-link:focus .clients-icon{
-  fill: #2196F3;
+  fill: var(--accent-color);
 }
 /* footer */
 
@@ -405,6 +415,13 @@ body {
   padding-bottom: 60px;
   padding-top: 60px;
   background-color: var(--footer-color);
+}
+.footer-conteiner{
+  display: flex;
+  align-items: baseline;
+}
+.footer-left-side {
+  margin-right: 70px;
 }
 
 .footer-item {
@@ -436,6 +453,41 @@ body {
   margin-bottom: 20px;
   color: var(--white-color);
 }
+/* footer right-side svg*/
+.social-media-list{
+  display: flex;
+}
+.social-title{
+margin-bottom: 20px;
+font-size: 14px;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+
+.social-media-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.social-media-link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.social-media-link:hover,
+.social-media-link:focus{
+  background-color: var(--accent-color);
+}
+
+.social-media-icon{
+  fill: var(--white-color);
+}
+ 
 
 /* ---Portfolio--- */
 
@@ -449,6 +501,11 @@ body {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+.project-item:hover,
+.project-item:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .project-item:nth-child(3n) {
   margin-right: 0px;
 }
@@ -464,6 +521,7 @@ body {
 }
 .project-title {
   margin-bottom: 4px;
+
   font-size: 18px;
   letter-spacing: 0.06em;
   line-height: 2;
@@ -501,9 +559,11 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+
   cursor: pointer;
   border: none;
   border-radius: 4px;
+
   color: var(--title-text-color);
   background-color: var(--team-color);
 }
@@ -519,10 +579,9 @@ body {
 .project-btn:focus {
   color: var(--white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .project-link{
   display: block;
 }
-/* test */
-
-
