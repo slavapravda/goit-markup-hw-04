@@ -403,6 +403,7 @@ body {
 .clients-link:focus .clients-icon{
   fill: var(--accent-color);
 }
+
 /* footer */
 
 .section-footer {
