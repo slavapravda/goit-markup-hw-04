@@ -88,11 +88,6 @@ body {
   font-style: normal;
 }
 
-/* SVG */
-
-
-
-
 
 /* header */
 .header {
@@ -259,7 +254,7 @@ body {
   background-color: #188ce8;
 }
 /* work*/
-.graphic-img{
+.graphic-svg{
   display: flex;
   margin-bottom: 30px;
   justify-content: center;
@@ -395,7 +390,6 @@ body {
 .clients-item:not(:last-child){
   margin-right: 30px;
 }
-/* clients-svg */
 .clients-icon{
   fill: #AFB1B8;
 }
