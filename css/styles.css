@@ -413,8 +413,8 @@ body {
 }
 .footer-conteiner{
   display: flex;
-  align-items: baseline;
 }
+
 .footer-left-side {
   margin-right: 70px;
 }
